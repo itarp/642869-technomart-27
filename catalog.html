@@ -57,9 +57,14 @@
       <section class="productCatalog">
         <h1>Перфораторы</h1>
         <div>
-          <h2>Фильтр товаров</h2>
+          <h2>Фильтр:</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <!--Здесь будет фильтр по цене-->
+            <fieldset class="price">
+              <legend>Цена:</legend>
+              <!-- Здесь будет двухдиапазонный ползунок выбора цены -->
+              <input id="idStartPrice" type="number" name="startPrice" value="0">
+              <input id="idFinishPrice" type="number" name="finishPrice" value="30000">
+            </fieldset>
             <fieldset class="manufacturers">
               <legend>Производители:</legend>
               <ul>
@@ -101,7 +106,14 @@
             <button class="filter-button button" type="submit">Показать</button>
           </form>
         </div>
-        <!--Здесь будет сортировка-->
+        <div class="sorting">
+          <h2>Сортировка:</h2>
+          <button type="button">по цене</button>
+          <button type="button">по типу</button>
+          <button type="button">по функционалу</button>
+          <button type="button"><span class="vissualy-hidden">по возрастанию</span></button>
+          <button type="button"><span class="vissualy-hidden">по убыванию</span></button>
+        </div>
         <div>
           <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="productCatalog-list">
@@ -116,8 +128,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">15500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -130,8 +144,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">25500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -144,8 +160,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">12500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -158,8 +176,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">15500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -172,8 +192,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">25500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -186,8 +208,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">12500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -200,8 +224,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">15500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -214,8 +240,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">25500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
             <li class="productCatalog-item">
               <p class="catalog-item-image">
@@ -228,8 +256,10 @@
               <p class="productCatalog-item-price">
                 <a class="button button-price" href="">12500 Р.</a>
               </p>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+              <div class="cardNavigation">
+                <button type="button">Купить</button>
+                <button type="button">В закладки</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -274,9 +304,9 @@
         <p>© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
         <ul class="list-social">
-          <li class="item-social"><a href="">Вконтакте</a></li>
-          <li class="item-social"><a href="">Фейсбук</a></li>
-          <li class="item-sicial"><a href="">Инстаграм</a></li>
+          <li class="item-social"><a href=""><span class="vissualy-hidden">Вконтакте</span></a></li>
+          <li class="item-social"><a href=""><span class="vissualy-hidden">Фейсбук</span></a></li>
+          <li class="item-sicial"><a href=""><span class="vissualy-hidden">Инстаграм</span></a></li>
         </ul>
         <p>Обратная связь: <span>mail@htmlacademy.ru</span></p>
         <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
@@ -288,7 +318,7 @@
         <a href="">Оформить заказ</a>
         <button type="button">Продолжить покупки</button>
       </div>
-      <button type="button">Закрыть</button>
+      <button type="button"><span class="vissualy-hidden">Закрыть</span></button>
     </div>
   </body>
 </html>

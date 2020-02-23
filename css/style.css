@@ -1,0 +1,470 @@
+/* global styles */
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* general site styles */
+.list-mainMenu,
+.footer-list-menu,
+.footer-list-catalog,
+.list-social,
+.breadcrumbs,
+.filter-list,
+.productCatalog-list {
+  list-style: none;
+}
+
+.sectionHeaders {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.btn {
+  border: none;
+}
+
+
+/* comon styles for pageHeader and pageFooter*/
+.pageHeader,
+.pageFooter {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header-topLine,
+.footer-bottomLine {
+  background-color: #293449;
+}
+
+.header-logo,
+.footer-logo {
+  background-color: #ee3643;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active,
+.footer-logo:active {
+  background-color: #ba2732;
+}
+
+.siteNavigation,
+.footer-wrapperNav {
+  background-color: #32425c;
+}
+
+/* styles for pageHeader */
+.pageHeader {
+  font-size: 17px;
+  
+  background-color: #f3f7f9;
+}
+
+.header-topLine {
+  line-height: 18px;
+}
+
+.header-topLine a {
+  color: #ffffff;
+}
+
+.pageHeader .siteSearch:hover,
+.pageHeader .bookmarks:hover,
+.pageHeader .bookmarks:focus,
+.pageHeader .basket:hover,
+.pageHeader .basket:focus {
+  background-color: #212a3a;
+}
+
+.pageHeader .siteSearch {
+  color: #ffffff;
+  
+  background-color: transparent;
+}
+
+.pageHeader .siteSearch:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pageHeader .siteSearch::placeholder {
+  color: #ffffff;
+}
+
+.pageHeader .makeAnOrder {
+  background-color: #63a63e;
+}
+
+.pageHeader .makeAnOrder:hover,
+.pageHeader .makeAnOrder:focus {
+  background-color: #5fbb2d;
+}
+
+.pageHeader .makeAnOrder:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #518534;
+}
+
+.pageHeader .bookmarks:active,
+.pageHeader .basket:active {
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: #161d29;
+}
+
+.userNavigation a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.loginInterface a:hover,
+.loginInterface a:focus {
+  color: #ee3643;
+}
+
+.loginInterface a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.interfaceInside a:active {
+  opacity: 0.3;
+}
+
+.list-menuUser {
+  list-style: none;
+}
+
+.list-menuUser a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #32425c;
+
+  background-color: transparent;
+}
+
+.list-menuUser a:hover,
+.list-menuUser a:focus {
+  color: #ee3643;
+}
+
+.list-menuUser a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pageHeader .subTitle {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.pageHeader .phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.pageHeader .address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.header-middleLine {
+  color: #000000;
+}
+
+.list-mainMenu a {
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.list-mainMenu a:hover,
+.list-mainMenu a:focus {
+  background-color: #293449;
+}
+
+.list-mainMenu a:active {
+  color: rgba(255, 255, 255, 0.5);
+  
+  background-color: #1d2739;
+}
+
+/* styles for pagefooter */
+.footer-wrapperNav {
+  font-size: 18px;
+  color: #f3f7f9;
+}
+
+.footer-list-menu a {
+  color: #f1f5f7;
+}
+
+.footer-list-menu a:hover,
+.footer-list-menu a:focus,
+.footer-list-catalog a:hover,
+.footer-list-catalog a:focus {
+  text-decoration: underline;
+}
+
+.footer-list-menu a:active,
+.footer-list-catalog a:active {
+  opacity: 0.5;
+}
+
+.footer-list-catalog a {
+  color: #ffda96;
+}
+
+.footer-bottomLine {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.list-social a {
+  color: #f0f1f2;
+
+  background-color: #212a3a;
+}
+
+.list-social a:hover,
+.list-social a:focus {
+  background-color: #ee3643;
+}
+
+.footer-bottomLine-right a {
+  color: #ffd180;
+}
+
+.footer-bottomLine-right a:hover,
+.footer-bottomLine-right a:focus {
+  text-decoration: underline;
+}
+
+.footer-bottomLine-right a:active {
+  color: #ee3643;
+}
+
+/* styles for main */
+.btn-red {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+  background-color: #ca2c37;
+}
+
+.btn-red:active {
+  color: rgba(255, 255, 255, 0.6);
+  
+  background-color: #ba2732;
+}
+
+.btn-by {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+
+.btn-by:hover,
+.btn-by:focus {
+  background-color: #5fbb2d;
+}
+
+.btn-by:active {
+  background-color: #518534;
+}
+
+.btn-bookmarks {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #32425c;
+
+  background-color: #ffffff;
+
+  border: 3px solid #63a63e;
+}
+
+.btn-bookmarks:hover,
+.btn-bookmarks:focus {
+  border: 3px solid #32425c;
+}
+
+.btn-bookmarks:active {
+  border: 3px solid #32425c;
+
+  opacity: 0.3;
+}
+
+.list-advantages {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.breadcrumbs {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+.productCatalog {
+  text-transform: uppercase;
+}
+
+.productCatalog-wrapTitle {
+  background-color: #f2f6f8;
+}
+
+.productCatalog .sectionHeaders {
+  color: #32425c;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.field-title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter-input + label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.4;
+}
+
+.btn-filter {
+  font-family: 'PT Sans', sans-serif;;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: inherit;
+
+  border: 1px solid #e5e5e5;
+}
+
+.productCatalog-item {
+  border: 1px solid #e5e5e5;
+}
+
+.productCatalog-item:hover,
+.productCatalog-item:focus {
+  border: none;
+}
+
+.productTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.productCatalog-item-oldPrice {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+}
+
+.productCatalog-item-price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+.cardNavigation {
+  display: none;
+}
+
+.productCatalog-item:hover .cardNavigation,
+.productCatalog-item:focus .cardNavigation{
+  display: block;
+}
+
+/*- modal window -*/
+.modal-writeUs {
+  display: none;
+}
+
+.modal-map {
+  display: none;
+}
+
+.modal-inBasket {
+  display: none;
+}
+
+/* Other */
+.pageIndex .loginInterface,
+.pageCatalog .interfaceInside {
+  display: block;
+}
+
+.pageCatalog .loginInterface,
+.pageIndex .interfaceInside {
+  display: none;
+}
+
+.pageCatalog .basket-full {
+  background-color: #ee3643;
+}
+
+.pageCatalog .basket-full:hover,
+.pageCatalog .basket-full:focus {
+  background-color: #ca2c37;
+}
+
+.pageCatalog .basket-full:active {
+  background-color: #ba2732;
+}
+

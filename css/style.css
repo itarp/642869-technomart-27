@@ -18,6 +18,12 @@ a {
 .footer-list-menu,
 .footer-list-catalog,
 .list-social,
+.list-promoProducts,
+.list-promoSlider,
+.list-promoServices,
+.list-Manufacturers,
+.list-services-control,
+.list-services-slider,
 .breadcrumbs,
 .filter-list,
 .productCatalog-list {
@@ -26,13 +32,19 @@ a {
 
 .sectionHeaders {
   font-family: 'Cuprum', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .btn {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
   border: none;
 }
 
@@ -97,6 +109,8 @@ a {
   color: #ffffff;
   
   background-color: transparent;
+  
+  border: none;
 }
 
 .pageHeader .siteSearch:focus {
@@ -268,13 +282,27 @@ a {
 }
 
 /* styles for main */
-.btn-red {
-  font-family: 'Cuprum', sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+.card-new {
+  font-family: 'PT Sans', sans-serif;
   color: #ffffff;
 
+  background-color: #ff5357;
+}
+
+.btn-promo {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-promo:hover,
+.btn-promo:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-promo:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-red {
   background-color: #ee3643;
 }
 
@@ -290,12 +318,6 @@ a {
 }
 
 .btn-by {
-  font-family: 'Cuprum', sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-
   background-color: #63a63e;
 }
 
@@ -331,6 +353,120 @@ a {
   opacity: 0.3;
 }
 
+.promoSection {
+  font-family: 'Cuprum', sans-serif;
+}
+
+.item-promoProducts-yellow {
+  background-color: #ffbf47;
+}
+
+.item-promoProducts-blue {
+  background-color: #3bbce3;
+}
+
+.item-promoProducts-pink {
+  background-color: #dc91db;
+}
+
+.list-promoProducts h3,
+.list-promoServices h3{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.list-promoSlider {
+  color: #ffffff;
+}
+
+.item-promoSlider {
+  background-color: #584e44;
+}
+
+.list-promoSlider h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.list-promoSlider p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.item-promoServices-green {
+   background-color: #8ed78f;
+}
+
+.item-promoServices-yellow {
+  background-color: #ffc047;
+}
+
+.header-popularGoods,
+.header-popularManufacturers {
+  background-color: #f9f5f0;
+}
+
+.header-popularGoods .sectionHeaders,
+.header-popularManufacturers .sectionHeaders,
+.productCatalog .sectionHeaders {
+  color: #32425c;
+}
+
+.link-Manufacturers {
+  border: 1px solid #e5e5e5;
+}
+
+.link-Manufacturers:hover,
+.link-Manufacturers:focus {
+  border: none;
+}
+
+.link-Manufacturers:active {
+  opacity: 0.3;
+  border: none;
+}
+
+.services {
+  background-color: #f4f8f9;
+}
+
+.list-services-control {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.item-services-control {
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.item-services-control:hover,
+.item-services-control:focus {
+  background-color: #293449;
+}
+
+.radio-services:checked + label {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.list-services-slider h3{
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
 .list-advantages {
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
@@ -355,8 +491,10 @@ a {
   background-color: #f2f6f8;
 }
 
-.productCatalog .sectionHeaders {
-  color: #32425c;
+.filter-title {
+  line-height: 18px;
+
+  background-color: #f7f3ec;
 }
 
 .filter fieldset {
@@ -369,6 +507,12 @@ a {
   line-height: 30px;
 }
 
+.priceInput {
+  background-color: #f7f3ec;
+
+  border: none;
+}
+
 .filter-input + label {
   font-size: 15px;
   line-height: 20px;
@@ -378,19 +522,64 @@ a {
   opacity: 0.4;
 }
 
-.btn-filter {
+.list-pagination {
+  list-style: none;
+}
+
+.btn-filter,
+.btn-pagination {
   font-family: 'PT Sans', sans-serif;;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #000000;
 
   background-color: inherit;
 
   border: 1px solid #e5e5e5;
 }
 
+.btn-filter:hover,
+.btn-filter:focus,
+.btn-pagination:hover:not(.btn-pagination-current),
+.btn-pagination:focus:not(.btn-pagination-current) {
+  border: 1px solid #bdc6ca;
+}
+
+.btn-pagination:active:not(.btn-pagination-current) {
+  border: 1px solid #ee3643;
+}
+
+.btn-pagination-current {
+  background-color: #ee3643;
+
+  border: 1px solid #ee3643;
+}
+
+.sorting {
+  line-height: 18px;
+
+  background-color: #f7f3ec;
+}
+
 .productCatalog-item {
   border: 1px solid #e5e5e5;
+}
+
+.sorting-input + label {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: transparent;
+}
+
+.sorting-input:hover + label,
+.sorting-input:focus + label {
+  text-decoration: dotted underline red;
+}
+
+.sorting-input:checked + label {
+  color: #ee3643;
+  text-decoration: none;
 }
 
 .productCatalog-item:hover,
@@ -429,6 +618,10 @@ a {
 .productCatalog-item:hover .cardNavigation,
 .productCatalog-item:focus .cardNavigation{
   display: block;
+}
+
+.aboutProduct {
+  background-color: #f2f6f8;
 }
 
 /*- modal window -*/

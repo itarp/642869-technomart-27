@@ -15,7 +15,7 @@
         <form class="" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="idSearch">Поиск</label>
-            <input id="idSearch" type="search" name="search" value="" placeholder="Поиск:">
+            <input class="siteSearch" id="idSearch" type="search" name="search" value="" placeholder="Поиск:">
           </p>
           <button type="submit"><span class="visually-hidden">Найти</span></button>
         </form>
@@ -69,13 +69,16 @@
           <h2 class="sectionHeaders">Перфораторы</h2>
         </div>
         <div>
-          <p>Фильтр:</p>
+          <p class="filter-title">Фильтр:</p>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="price">
               <legend class="field-title">Цена:</legend>
-              <!-- Здесь будет двухдиапазонный ползунок выбора цены -->
-              <input id="idStartPrice" type="number" name="startPrice" value="0">
-              <input id="idFinishPrice" type="number" name="finishPrice" value="30000">
+              <div></div>
+              <p>
+                <input class="priceInput" id="idStartPrice" type="number" name="startPrice" value="0">
+                &mdash;
+                <input class="priceInput" id="idFinishPrice" type="number" name="finishPrice" value="30000">
+              </p>
             </fieldset>
             <fieldset class="manufacturers">
               <legend class="field-title">Производители:</legend>
@@ -115,16 +118,35 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="btn btn-filter" type="submit">Показать</button>
+            <button class="btn-filter" type="submit">Показать</button>
           </form>
         </div>
         <div class="sorting">
-          <p>Сортировка:</p>
-          <button type="button">по цене</button>
-          <button type="button">по типу</button>
-          <button type="button">по функционалу</button>
-          <button type="button"><span class="vissualy-hidden">по возрастанию</span></button>
-          <button type="button"><span class="vissualy-hidden">по убыванию</span></button>
+          <p class="sorting-title">Сортировка:</p>
+          <ul class="list-sorting-group">
+            <li>
+              <input class="sorting-input vissualy-hidden" id="idSortingPrice" type="radio" name="sorting-group" checked>
+              <label for="idSortingPrice">по цене</label>
+            </li>
+            <li>
+              <input class="sorting-input vissualy-hidden" id="idSortingType" type="radio" name="sorting-group">
+              <label for="idSortingType">по типу</label>
+            </li>
+            <li>
+              <input class="sorting-input vissualy-hidden" id="idSortingFunctional" type="radio" name="sorting-group">
+              <label for="idSortingFunctional">по функционалу</label>
+            </li>
+          </ul>
+          <ul class="list-sorting-ordered">
+            <li>
+              <input class="sorting-input vissualy-hidden" id="idSortingUp" type="radio" name="sorting-ordered" checked>
+              <label for="idSortingUp"><span class="vissualy-hidden">по возрастанию</span></label>
+            </li>
+            <li>
+              <input class="sorting-input vissualy-hidden" id="idSortingDown" type="radio" name="sorting-ordered">
+              <label for="idSortingDown"><span class="vissualy-hidden">по убыванию</span></label>
+            </li>
+          </ul>
         </div>
         <div>
           <ul class="productCatalog-list">
@@ -266,12 +288,12 @@
           </ul>
         </div>
         <div class="pagination">
-          <ol>
-            <li><a>1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
+          <ol class="list-pagination">
+            <li><a class="btn-pagination btn-pagination-current">1</a></li>
+            <li><a class="btn-pagination" href="">2</a></li>
+            <li><a class="btn-pagination" href="">3</a></li>
           </ol>
-          <a href="">Следующая</a>
+          <a class="btn-pagination" href="">Следующая</a>
         </div>
       </section>
       <section class="aboutProduct">

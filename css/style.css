@@ -16,12 +16,6 @@ a {
 /* general site styles */
 .list-mainMenu,
 .list-social,
-.list-promoProducts,
-.list-promoSlider,
-.list-promoServices,
-.list-Manufacturers,
-.list-services-control,
-.list-services-slider,
 .filter-list,
 .productCatalog-list {
   list-style: none;
@@ -470,6 +464,21 @@ a {
   font-family: 'Cuprum', sans-serif;
 }
 
+.list-promoProducts {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.item-promoProducts {
+  width: 300px;
+}
+
 .item-promoProducts-yellow {
   background-color: #ffbf47;
 }
@@ -490,11 +499,25 @@ a {
   color: #ffffff;
 }
 
+.wrap-promoSliderServices {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 53px;
+}
+
 .list-promoSlider {
+  margin: 0;
+  padding: 0;
+
   color: #ffffff;
+
+  list-style: none;
 }
 
 .item-promoSlider {
+  width: 620px;
+
   background-color: #584e44;
 }
 
@@ -510,12 +533,35 @@ a {
   line-height: 24px;
 }
 
+.list-promoServices {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.item-promoServices {
+  width: 300px;
+}
+
 .item-promoServices-green {
    background-color: #8ed78f;
 }
 
 .item-promoServices-yellow {
   background-color: #ffc047;
+}
+
+.popularGoods {
+  margin-bottom: 21px;
+}
+
+.header-popularGoods {
+  margin-bottom: 20px;
+}
+
+.popularManufacturers {
+  margin-bottom: 85px;
 }
 
 .header-popularGoods,
@@ -529,8 +575,35 @@ a {
   color: #32425c;
 }
 
+.header-popularManufacturers {
+  margin-bottom: 20px;
+}
+
+.list-Manufacturers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.item-Manufacturers {
+  width: 220px;
+}
+
 .link-Manufacturers {
+  display: block;
+  box-sizing: border-box;
+
+  width: inherit;
+
+  text-align: center;
+
   border: 1px solid #e5e5e5;
+
 }
 
 .link-Manufacturers:hover,
@@ -544,14 +617,27 @@ a {
 }
 
 .services {
+  margin-bottom: 80px;
+
   background-color: #f4f8f9;
 }
 
+.slider-services {
+  display: flex;
+  justify-content: space-between;
+}
+
 .list-services-control {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+
   font-family: 'Cuprum', sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+
+  list-style: none;
 }
 
 .item-services-control {
@@ -569,6 +655,17 @@ a {
   color: #32425c;
 
   background-color: #ffffff;
+}
+
+.list-services-slider {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.item-services-slider {
+  width: 620px;
 }
 
 .list-services-slider h3{
